@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Kelly+Slab&family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+    --font-base: 'League Spartan', sans-serif;
+    --font-header: 'Kelly Slab', sans-serif;
+    --font-footer: 'Calligraffitti', sans-serif;
+    --primary-color: rgb(239,25,12);          /*  #EF190C  */
+    --secondary-color: rgb(255,223,0);        /*  #F84343  */
+    --background-color: rgb(253,255,237);     /*  #F86043  */
+    --gray-color: rgb(99,99,99);              /*  #363636  */
+    --white-color: rgb(254,254,254);          /*  #E6E6E6  */
+    --black-color: rgb(16,16,16);             /*  #101010  */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-base);
+  background-color: var(--background-color);
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  /* Track */
+::-webkit-scrollbar-track {
+    background: var(--primary-color);
+    box-shadow: inset 0 0 5px var(--primary-color); 
+    opacity: 0.2;
+}
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 5px;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-color);
+    box-shadow: inset 0 0 10px var(--secondary-color); 
+}
